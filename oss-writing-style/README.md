@@ -34,7 +34,7 @@ Keep company-specific rows in your own copy or fork. The shared version stays ge
 
 The skill follows the [Agent Skills](https://agentskills.io) format: a folder with a `SKILL.md` that has `name` and `description` frontmatter, plus a `references` folder the agent reads when it needs to. Any harness that supports that format can load it. The folder name must match the `name` field (`oss-writing-style`). If you rename one, rename the other.
 
-- **Harnesses with skill support.** Copy or symlink this folder into the harness's skills directory. For Claude Code, that's `~/.claude/skills/` for every project or `.claude/skills/` inside one repository. For other harnesses, see their documentation for the skills location.
+- **Harnesses with skill support.** Copy or symlink this folder into the harness's skills directory. 
 - **Harnesses without skill support.** Put the contents of `SKILL.md`, without the frontmatter, in the harness's project instructions file or system prompt. Make the `references` folder readable to the agent, and keep the paths relative to that folder.
 
 A symlink keeps the installed copy in sync with your edits. If you copy instead, copy again after each change.
@@ -43,7 +43,7 @@ A symlink keeps the installed copy in sync with your edits. If you copy instead,
 
 Commit the text or save a copy before you run the skill, so you can diff the result. Then give the agent the text to review or edit, as a file or pasted into the request, and ask it to apply the writing style.
 
-**Choosing a mode.** The skill detects UI text or documentation from the input and states its decision in the first line of the report. To remove the guess, name the mode in the request, such as `ui` or `docs`, or say "UI strings" or "documentation." In Claude Code, `/oss-writing-style ui` and `/oss-writing-style docs` work.
+**Choosing a mode.** The skill detects UI text or documentation from the input and states its decision in the first line of the report. To remove the guess, name the mode in the request, such as `ui` or `docs`, or say "UI strings" or "documentation." For example, `/oss-writing-style ui` and `/oss-writing-style docs`.
 
 **What you get back.**
 
@@ -71,7 +71,7 @@ The `tests` folder holds manual test cases: a documentation sample, a UI sample,
 | `tests/ui-sample.json` | UI text | Buttons, dialogs, errors, form fields, toasts, empty states, tooltips, links, tokens, badges |
 | `tests/expected-results.md` | Both | What must change, what must be flagged, and what must stay as it is |
 
-**If you are a person testing the skill,** give the agent the sample path and the mode. In Claude Code, use `/oss-writing-style docs` for the document or `/oss-writing-style ui` for the strings. In other harnesses, ask for the writing style pass and name the mode. Then check the agent's report against the pass criteria.
+**If you are a person testing the skill,** give the agent the sample path and the mode. In your AI Agent, use `/oss-writing-style docs` for the document or `/oss-writing-style ui` for the strings. Ask for the writing style pass and name the mode. Then check the agent's report against the pass criteria.
 
 **Pass criteria**
 
