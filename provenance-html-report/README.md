@@ -1,3 +1,5 @@
+[![](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # provenance-html-report
 
 A skill that generates a review checklist to quickly verify concepts/claims in AI-generated documents.

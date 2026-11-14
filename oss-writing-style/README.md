@@ -1,3 +1,5 @@
+[![](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # OSS Writing Style skill
 
 An agent skill that applies a plain, consistent writing style to software product UI text and documentation as a final standardization pass. It changes how text is worded, formatted, and structured. It never changes the facts, and it flags anything that needs a human decision.
