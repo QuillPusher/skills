@@ -1,11 +1,11 @@
 ---
-name: oss-writing-style
+name: technical-writing-style
 description: Apply a plain, consistent writing style to software product UI text and documentation as a final standardization pass. It changes wording, formatting, and structure, never the facts, and flags anything that needs a human decision. Use when editing, reviewing, or drafting from a spec any customer-facing text, either documentation (feature docs, deployment guides, release notes, API docs, knowledge base) or UI text (labels, buttons, menus, dialogs, error messages, tooltips, toasts, empty states, microcopy, UX copy, string tables, resx, i18n files). Don't use it to edit code, legal text, or translations.
 metadata:
-  version: "1.0.0"
+  version: "2.0.0"
 ---
 
-# OSS Writing Style
+# Technical Writing Style
 
 The voice is clear, direct, warm, and honest. Write like a person talking, lead with the point, and say what the reader should do next. This skill turns that into rules you can apply and check.
 

@@ -11,7 +11,7 @@ Manual test cases for the skill. Each sample is seeded with known problems. Run 
 ## Run a test
 
 1. Copy the sample to a scratch folder. Don't run the skill on the copy in this repository, or the sample stops being a test.
-2. Ask the agent to apply the skill. In Claude Code: `/oss-writing-style docs` for the document, `/oss-writing-style ui` for the strings, with the file attached or its path in the request. In other harnesses, ask for the writing style pass and name the mode.
+2. Ask the agent to apply the skill. In your AI Agent: `/technical-writing-style docs` for the document, `/technical-writing-style ui` for the strings, with the file attached or its path in the request. In other harnesses, ask for the writing style pass and name the mode.
 3. Compare the result with `expected-results.md`.
 
 ## Pass criteria
